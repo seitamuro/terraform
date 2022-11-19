@@ -10,5 +10,6 @@ resource "aws_instance" "sample_web_server" {
     sudo yum install -y httpd
     sudo systemctl start httpd
     sudo systemctl enable httpd
+
     EOF
 }
