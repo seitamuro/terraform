@@ -23,7 +23,7 @@ resource "aws_route_table" "sample_rtb" {
     
     route {
         cidr_block = "0.0.0.0/0"
-        gateway_id = aws_internet_gateway.sample_igw
+        gateway_id = aws_internet_gateway.sample_igw.id
     }
 }
 
